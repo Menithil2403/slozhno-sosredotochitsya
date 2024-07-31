@@ -2,3 +2,32 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --visibility-REC: none;
+
+  --header-REC-color: #FF0070;
+
+  --decorated-zone-color: #FF0070;
+
+  --link-shadow-color: #FF0070;
+  --link-hover: #f1b2ce;
+  --link-focus-within: #f1b2ce;
+
+  --theme-menu-button-color: #FF0070;
+  --theme-menu-button-color-hover:rgba(255, 0, 111, 0.4);
+
+  --background-color: #000028;
+  --background-img: url(../images/cover-image-dark.png);
+  --background-sub-color: #000028;
+
+  --regular-text-color: #F1B2CE;
+
+  --title-heder-footer-color: #DB00FF;
+  --title-heder-footer-color-shadow: #FF0070;
+  
+  --h2-color:#FF0070;
+
+  --text-container-color: #FF0070;
+  --text-container-text-color: #000028;
+}
