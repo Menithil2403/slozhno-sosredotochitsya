@@ -9,6 +9,8 @@
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
   line-height: 23.4px;
+  background: var(--background-img) no-repeat center var(--background-sub-color);
+  background-attachment: fixed;
   /*--*/
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
@@ -48,7 +50,7 @@ p {
 
 .link:focus-within {
   outline: none;
-  border: 1px solid var(--link-focus-within); 
+  border: 1px solid var(--link-focus-within);
 }
 
 .text-container-color {
@@ -56,7 +58,7 @@ p {
   color: var(--text-container-text-color);
 }
 
-.decorated-zone::after { 
+.decorated-zone::after {
   position: absolute;
   top: var(--calc__20px_10px);
   right: var(--calc__20px_10px);
@@ -87,7 +89,6 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
   justify-content: end;
-  background: var(--background-img) no-repeat center var(--background-sub-color);
   background-size: 100% 100%;
   margin-bottom: clamp(2.5rem, 1.307rem + 5.089vw, 3.75rem);
   /*media is present*/
@@ -120,7 +121,7 @@ p {
   visibility: var(--visibility-REC);
 }
 
-.header__theme-menu { 
+.header__theme-menu {
   grid-row: 1 / 2;
   margin: 8px auto clamp(4.156rem, 5.579rem + 17.531vw, 17.156rem);
   align-self: end;
@@ -134,7 +135,7 @@ p {
 }
 
 .header__theme-menu-list li:not(:last-child,:first-child) {
-  margin: 10px 0;
+  margin: 10px 4px;
 }
 
 .header__theme-menu-item .header__theme-menu-button {
@@ -148,6 +149,11 @@ p {
   border: 1px solid var(--theme-menu-button-color-hover);
 }
 
+.header__theme-menu-button:focus {
+  outline: none;
+  border-bottom: 1px solid var(--theme-menu-button-color);
+}
+
 .header__theme-menu-button {
   border: none;
   background-color: transparent;
@@ -155,7 +161,7 @@ p {
   color: var(--theme-menu-button-color);
 }
 
-.header__title { 
+.header__title {
   grid-row: 2 / 3;
   color: var(--title-heder-footer-color);
   text-shadow: 4px 4px var(--title-heder-footer-color-shadow);
@@ -281,7 +287,6 @@ p {
 .footer {
   position: relative;
   display: flex;
-  height: 88.5vh ;
   justify-content: center;
   align-items: center;
   margin-top: clamp(2.5rem, 1.307rem + 5.089vw, 3.75rem);
@@ -296,6 +301,7 @@ p {
   font-weight: 700;
   line-height: 129.53px;
   text-align: center;
+  margin: 36.6vh 0;
 }
 
 /*====================@media_(){_}=======================*/
@@ -317,6 +323,7 @@ p {
   
   .header__theme-menu-list li {
     display: block;
+    margin: 0px 4px;
   }
 
   .header__title {
@@ -335,8 +342,8 @@ p {
   }
 
   /*====================footer=======================*/
-  .footer {
-    height: clamp(41.438rem, 20.34rem + 90.751vw, 67.5rem);
+  .footer__title {
+    margin: clamp(16.875rem, 6.319rem + 45.038vw, 27.938rem) 0;
   }
 
 }
@@ -360,7 +367,7 @@ p {
 
 @media (width <= 982px) {
 
-  .section__cards-article { 
+  .section__cards-article {
     display: contents;
   }
 }
