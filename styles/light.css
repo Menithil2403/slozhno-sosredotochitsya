@@ -20,9 +20,9 @@
   --theme-menu-button-color: #353430;
   --theme-menu-button-color-hover: rgb(53, 52, 48, 0.4);
 
-  --background-color: black;/*#FFF1F7*/
+  --background-color: #FFF1F7;/*#FFF1F7*/
   --background-img: url(../images/cover-image-light.png);
-  --background-sub-color: black;/*#FFF1F7*/
+  --background-sub-color: #FFF1F7;/*#FFF1F7*/
 
   --regular-text-color: #353430;
 
