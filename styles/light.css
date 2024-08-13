@@ -20,14 +20,14 @@
   --theme-menu-button-color: #353430;
   --theme-menu-button-color-hover: rgb(53, 52, 48, 0.4);
 
-  --background-color: #FFF1F7;
+  --background-color: black;/*#FFF1F7*/
   --background-img: url(../images/cover-image-light.png);
-  --background-sub-color: #FFF1F7;
+  --background-sub-color: black;/*#FFF1F7*/
 
   --regular-text-color: #353430;
 
   --title-heder-footer-color: #FFC2E6;
-  --title-heder-footer-color-shadow: #FF8DCB;
+  --title-heder-footer-color-shadow: #FF0070;
 
   --h2-color:#353430;
   
