@@ -1,8 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-:root {
-  --calc__20px_10px: 20px;
-}
-
 .page {
   background-color: var(--background-color);
   color: var(--regular-text-color);
@@ -17,26 +13,6 @@
 }
 
 /*====================regular=======================*/
-
-h2 {
-  color: var(--h2-color);
-  width: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem);
-  font-size: 18px;
-  margin: 0px 0 20px 0;
-}
-
-h3 {
-  font-size: 18px;
-  margin: 0px 0 0 0;
-}
-
-h4 {
-  font-weight: normal;
-}
-
-p {
-  font-size: 18px;
-}
 
 .link {
   text-decoration: none;
@@ -65,8 +41,8 @@ p {
 
 .decorated-zone::after {
   position: absolute;
-  top: var(--calc__20px_10px);
-  right: var(--calc__20px_10px);
+  top: var(--main_gap);
+  right: var(--main_gap);
   content: "";
   width: 25px;
   height: 25px;
@@ -77,8 +53,8 @@ p {
 
 .decorated-zone::before {
   position: absolute;
-  bottom: var(--calc__20px_10px);
-  left: var(--calc__20px_10px);
+  bottom: var(--main_gap);
+  left: var(--main_gap);
   content: "";
   width: 25px;
   height: 25px;
@@ -101,8 +77,8 @@ p {
 .header::after {
   content: "rec";
   position: absolute;
-  top: var(--calc__20px_10px);
-  right: var(--calc__20px_10px);
+  top: var(--main_gap);
+  right: var(--main_gap);
   margin-right: 25px;
   text-transform: uppercase;
   color: var(--header-REC-color);
@@ -114,8 +90,8 @@ p {
 .header::before {
   content: "";
   position: absolute;
-  top: var(--calc__20px_10px);
-  right: var(--calc__20px_10px);
+  top: var(--main_gap);
+  right: var(--main_gap);
   box-shadow: 0px 0px 10px 5px var(--header-REC-color);
   margin: 7px;
   width: 9px;
@@ -142,10 +118,13 @@ p {
   margin: 10px 4px;
 }
 
-.header__theme-menu-item .header__theme-menu-button {
-  border: 1px solid transparent;
+.header__theme-menu-button {
+  border: 1px solid rgb(0 0 0 / 100%);
   word-spacing: 4px;
   padding: 0px 10px;
+  background-color: transparent;
+  text-transform: lowercase;
+  color: var(--theme-menu-button-color);
 }
 
 .header__theme-menu-button:hover {
@@ -156,13 +135,6 @@ p {
 .header__theme-menu-button:focus {
   outline: none;
   border-bottom: 1px solid var(--theme-menu-button-color);
-}
-
-.header__theme-menu-button {
-  border: none;
-  background-color: transparent;
-  text-transform: lowercase;
-  color: var(--theme-menu-button-color);
 }
 
 .header__title {
@@ -184,13 +156,13 @@ p {
   font-weight: bold;
   margin-left: 50vw;
   margin-bottom: clamp(4.125rem, 2.935rem + 9.044vw, 8.375rem);
-  margin-right: var(--calc__20px_10px);
+  margin-right: var(--main_gap);
   /*media is present*/
 }
 /*====================main=======================*/
 
 .main {
-  padding: 0 var(--calc__20px_10px);
+  padding: 0 var(--main_gap);
   /*media is present*/
 }
 
@@ -315,13 +287,13 @@ p {
   /*====================regular=======================*/
 
   :root {
-    --calc__20px_10px: clamp(0.625rem, 0.029rem + 2.545vw, 1.25rem);
+    --main_gap: clamp(0.625rem, 0.029rem + 2.545vw, 1.25rem);
   }
 
   /*====================header=======================*/
 
   .header__theme-menu {
-    margin: clamp(4.688rem, -2.29rem + 29.771vw, 12rem) var(--calc__20px_10px) clamp(4.063rem, -2.378rem + 27.481vw, 10.813rem) 0px ;
+    margin: clamp(4.688rem, -2.29rem + 29.771vw, 12rem) var(--main_gap) clamp(4.063rem, -2.378rem + 27.481vw, 10.813rem) 0px ;
     align-self: end;
     justify-self: end;
   }
@@ -337,7 +309,7 @@ p {
   }
 
   .header__text {
-    margin-bottom: clamp(5.9rem, -2.853rem + 33vw, 13.438rem);
+    margin-bottom: clamp(4.5rem, -3.853rem + 32vw, 13.438rem);
   }
 
   /*====================main=======================*/
@@ -367,8 +339,8 @@ p {
 @media (width <= 600px) {
 
   .header__text {
-    margin-left: var(--calc__20px_10px);
-    margin-right: var(--calc__20px_10px);
+    margin-left: var(--main_gap);
+    margin-right: var(--main_gap);
   }
 }
 

@@ -40,3 +40,27 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+img {
+  loading: lazy;
+}
+
+h2 {
+  color: var(--h2-color);
+  width: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 0px 0 0 0;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+p {
+  font-size: 18px;
+}

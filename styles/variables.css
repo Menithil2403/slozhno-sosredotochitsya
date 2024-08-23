@@ -4,6 +4,8 @@
 */
 
 :root {
+  --main_gap: 20px;
+
   --visibility-REC: none;
 
   --header-REC-color: #FF0070;
@@ -30,4 +32,10 @@
 
   --text-container-color: #FF0070;
   --text-container-text-color: #000028;
+}
+
+@media (width <= 768px) {
+  :root {
+    --main_gap: clamp(0.625rem, 0.029rem + 2.545vw, 1.25rem);
+  }
 }
