@@ -8,7 +8,7 @@
 
 body {
   min-inline-size: 375px;
-  max-inline-size: 1440px;
+  max-inline-size: 1024px;
   margin: 0 auto;
 }
 
@@ -63,4 +63,14 @@ h4 {
 
 p {
   font-size: 18px;
+}
+
+.header__theme-menu-item .header__theme-menu-button_active {
+  border: 1px solid var(--theme-menu-button-color-hover);
+
+}
+
+.header__theme-menu-item .header__theme-menu-button_active:hover {
+  cursor: none;
+  pointer-events: none;
 }
