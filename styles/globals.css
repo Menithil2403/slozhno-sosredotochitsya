@@ -47,7 +47,6 @@ img {
 
 h2 {
   color: var(--h2-color);
-  width: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem);
   font-size: 18px;
   margin-bottom: 20px;
 }
@@ -66,7 +65,7 @@ p {
 }
 
 .header__theme-menu-item .header__theme-menu-button_active {
-  border: 1px solid var(--theme-menu-button-color-hover);
+  border: 1px solid var(--theme-menu-button-color);
 
 }
 
