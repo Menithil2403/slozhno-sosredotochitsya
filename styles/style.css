@@ -70,7 +70,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
   justify-content: end;
-  margin-bottom: clamp(2.5rem, 1.307rem + 5.089vw, 3.75rem);
+  margin-bottom: clamp(3.9rem, 1.307rem + 5.089vw, 3.75rem);
   /*media is present*/
 }
 
