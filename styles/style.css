@@ -71,7 +71,6 @@
   grid-template-columns: repeat(auto-fill, 1fr);
   justify-content: end;
   margin-bottom: clamp(2.1rem, 1.307rem + 5.089vw, 3.75rem);
-  margin-top: 26px;
   /*media is present*/
 }
 
@@ -181,7 +180,7 @@
 
 .main__section-opening {
   display: grid;
-  grid-template-columns: clamp(14.75rem, 11.897rem + 12.173vw, 19.688rem) clamp(29.5rem, 23.144rem + 27.119vw, 40.5rem);
+  grid-template-columns: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem) clamp(29.75rem, -2.5rem + 67.188vw, 40.5rem);
   column-gap: 20px;
 }
 
@@ -203,7 +202,7 @@
 
 .main__section-list {
   display: grid;
-  grid-template-columns: clamp(14.75rem, 11.897rem + 12.173vw, 19.688rem) clamp(29.5rem, 23.144rem + 27.119vw, 40.5rem);
+  grid-template-columns: clamp(14.75rem, -0.063rem + 30.859vw, 19.688rem) clamp(29.75rem, -2.5rem + 67.188vw, 40.5rem);
   column-gap: 20px;
   /*media is present*/
 }
@@ -287,6 +286,7 @@
   font-weight: 700;
   line-height: 129.53px;
   text-align: center;
+  margin: 0;
   /*media is present*/
 }
 
@@ -322,17 +322,12 @@
   }
 
   /*====================main=======================*/
+  .main p {
+    word-spacing: 1px;
+  }
 
   .main section:not(:last-child) {
     margin-bottom: clamp(1.875rem, 0.086rem + 7.634vw, 3.75rem);
-  }
-
-  .main__section-opening {
-    grid-template-columns: repeat(auto-fill, clamp(22.188rem, -1.25rem + 100vw, 46.75rem));
-  }
-
-  .main__section-list {
-    grid-template-columns: repeat(auto-fill, clamp(22.188rem, -1.25rem + 100vw, 46.75rem));
   }
 
   /*====================footer=======================*/
@@ -350,6 +345,14 @@
     flex-direction: column;
     margin-top: clamp(0.625rem, 0.029rem + 2.545vw, 1.25rem);
     gap: clamp(0.625rem, 0.029rem + 2.545vw, 1.25rem);
+  }
+
+  .main__section-opening {
+    grid-template-columns: repeat(auto-fill, clamp(22.188rem, -1.25rem + 100vw, 46.75rem));
+  }
+
+  .main__section-list {
+    grid-template-columns: repeat(auto-fill, clamp(22.188rem, -1.25rem + 100vw, 46.75rem));
   }
 }
 
@@ -370,8 +373,16 @@
 
 @media (width <= 375px) {
 
-  h2 {
+  .main__section-list h2 {
     width: 100%;
+  }
+
+  h2 {
+    min-width: 100%;
+  }
+
+  .main__section-img h2 {
+    margin-bottom: 0;
   }
 
   .header__title {
